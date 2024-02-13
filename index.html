@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heading">
+            <img src="logo/employee.png" alt="Employee">
+            <h1>Employee Management System</h1>
+        </div>
+
+        <div class="tile">
+            <!-- Section title -->
+            <h2>Add Employee</h2>
+            <p>Click on the button below to add new employee details.</p>
+            <!-- Button to toggle employee form -->
+            <button class="btn blue" id="addEmp">Add Employee</button>
+            <form class="employee-form" id="employeeForm">
+                <!-- Form to add employee details -->
+                <label for="addId">ID:</label>
+                <input type="text" id="addId" name="id" required>
+                <label for="addName">Name:</label>
+                <input type="text" id="addName" name="name" required>
+                <label for="addDesignation">Designation:</label>
+                <input type="text" id="addDesignation" name="designation" required>
+                <label for="addAddress">Address:</label>
+                <textarea id="addAddress" name="address" rows="4" required></textarea>
+                <button type="button" class="btn green" id="subEmp">Submit</button>
+            </form>
+        </div>
+
+        <div class="tile">
+            <!-- Section title -->
+            <h2>View Employees</h2>
+            <p>Click on the button below to view or delete existing employee details.</p>
+            <!-- Button to toggle employee table -->
+            <button class="btn blue" id="viewEmp">View Employees</button>
+            <table id="employeeTable">
+                <!-- Table to display employee details -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Address</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeList">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tile">
+            <!-- Section title -->
+            <h2>Edit Employees</h2>
+            <p>Click on the button below to modify existing employee details.</p>
+            <!-- Button to toggle edit mode -->
+            <button class="btn blue" id="editEmp">Edit Employees</button>
+            <div class="scrollable">
+                <table id="editEmployeeTable">
+                    <!-- Table to display editable employee details -->
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Designation</th>
+                            <th>Address</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="editEmployeeList">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

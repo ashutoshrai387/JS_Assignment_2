@@ -1,0 +1,134 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; 
+    padding: 40px;
+}
+
+/* Container styles */
+.container {
+    border: 1px solid black; 
+    border-radius: 10px; 
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #ececfb;
+}
+
+/* Heading styles */
+.heading {
+    text-align: center; 
+}
+
+/* Tile styles */
+.tile {
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Employee form styles */
+.employee-form {
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-top: 20px; 
+    padding: 20px; 
+    display: none; 
+}
+
+.employee-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.employee-form input[type="text"],
+.employee-form textarea {
+    width: calc(100% - 12px);
+    padding: 8px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+/* Table styles */
+#employeeTable,
+#editEmployeeTable {
+    display: none; 
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+th,
+td {
+    padding: 8px; 
+    border-bottom: 1px solid #ddd; 
+    text-align: left; 
+    word-wrap: break-word; 
+    max-width: 150px; 
+}
+
+th {
+    background-color: #f2f2f2; 
+}
+
+/* Button styles */
+.btn {
+    padding: 8px 16px;
+    cursor: pointer; 
+    color: #fff;
+    border: none; 
+    border-radius: 4px; 
+}
+
+/* Blue button styles */
+.blue {
+    background-color: #007bff; 
+}
+
+.blue:hover {
+    background-color: #0056b3;
+}
+
+/* Green button styles */
+.green {
+    background-color: #2dc200;
+}
+
+.green:hover {
+    background-color: #27a800; 
+}
+
+/* Red button styles */
+.red {
+    background-color: #cc0000; 
+}
+
+.red:hover {
+    background-color: #9b0000; 
+}
+
+/* Display message styles */
+.display-message {
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: small; 
+    position: fixed;
+    bottom: 30px; 
+    right: 40px;
+}
+
+/* Textarea styles */
+textarea {
+    resize: none; 
+}
+
+/* Scrollable container styles */
+.scrollable {
+    overflow-x: auto; 
+}
