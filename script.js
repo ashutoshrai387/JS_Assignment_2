@@ -85,11 +85,6 @@ class EmployeeManagementSystem {
     }
     
     // Methods for updating view and edit tables, and toggling their visibility
-    updateViewAndEditTables() {
-        this.updateEditTable();
-        this.updateViewTable();
-    }
-
     updateViewTable() {
         const list = document.getElementById("employeeList");
         list.innerHTML = '';
